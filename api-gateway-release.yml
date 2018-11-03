@@ -4,6 +4,9 @@ zuul:
   routes:
     # 自定义路由
     product: /myProduct/**
+    # 敏感头过滤设置为空，否则无法获取cookie
+    myProduct:
+      sensitiveHeaders:
   # 禁止某个路由
   ignored-patterns:
     - /**/product/list
