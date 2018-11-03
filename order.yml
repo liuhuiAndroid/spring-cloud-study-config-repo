@@ -14,6 +14,16 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true
+  rabbitmq:
+    addresses: 132.232.100.191:5672
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+        concurrency: 5
+        max-concurrency: 10
 server:
   port: 8085
 
