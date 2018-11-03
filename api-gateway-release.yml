@@ -1,0 +1,13 @@
+server:
+  port: 9000
+zuul:
+  routes:
+    # 自定义路由
+    product: /myProduct/**
+  # 禁止某个路由
+  ignored-patterns:
+    - /**/product/list
+# 查看所有路由
+management:
+  security:
+    enabled: false
