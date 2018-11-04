@@ -24,6 +24,9 @@ spring:
         acknowledge-mode: manual
         concurrency: 5
         max-concurrency: 10
+  redis:
+    host: 118.126.111.144
+    port: 6379
 PRODUCT: # 应用名称
   ribbon:
    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
