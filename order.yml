@@ -24,9 +24,6 @@ spring:
         acknowledge-mode: manual
         concurrency: 5
         max-concurrency: 10
-server:
-  port: 8085
-
 PRODUCT: # 应用名称
   ribbon:
    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
